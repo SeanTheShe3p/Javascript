@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#divhead {
+    height: 20%;
+    background-color: antiquewhite;
+    text-align: center;
+}
+#divmain {
+    height: 65%;
+}
+#divfoot {
+    height: 15%;
+    background-color: antiquewhite;
+    position: bottom;
+}
+#skate {
+    height: 250px;
+    box-shadow: 10px 10px 5px black;
+    margin:0% 50%;
+}
+button{
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Assesment01</title>
+
+    <script>
+        function headFunction(){
+            document.getElementById("paragraph_main").innerHTML = 
+            "Ut enim ad minim veniam, quisnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }
+    </script>
+    <script src="scripts/scripts.js"></script>
+</head>
+<body>
+
+    <div id="divhead">
+
+    <h1 id="head1">This is an assesment</h1>
+    
+</div>
+    <div id="divmain">
+
+    <button onclick='document.getElementById("skate").src = "images/skate1.jpg"'>Skater1</button>
+    <button onclick='document.getElementById("skate").src = "images/skate2.jpg"'>Skater2</button>
+    <button onclick='document.getElementById("skate").src = "images/skate3.jpg"'>Skater3</button><p></p>
+
+    <img src="images/skate1.jpg" alt="skateboarder1" id="skate"><p></p>
+
+    <button onclick="document.getElementById('skate').style.display = 'block'">show</button>
+    <button onclick="document.getElementById('skate').style.display = 'none'">hide</button>
+    <button onclick="resizeFunction()">Shrink</button>
+    
+        <p id="paragraph_main"></p>
+        <script>
+            document.getElementById("paragraph_main").innerHTML=
+            "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididuntut labore et dolore magna aliqua.";
+        </script>
+
+        <button onclick="headFunction()">External script</button>
+        <button onclick="extFunction()">Head script</button><p></p>
+        <button onclick="colorFunction()">Change color</button>
+
+</div>
+    <div id="divfoot">
+
+        <h2 id="head2">End of Assesment</h2>
+
+</div>
+</body>
+</html>
+<!--
+CSS
+Add a button and a script to change the width of the image.
+Add a button and a script to change the color of the text in the paragraph
+Show/hide
+Add show/hide buttons with the associated scripts to show and hide the image -->
