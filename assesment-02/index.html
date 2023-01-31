@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment-2</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/calculate.js"></script>
+</head>
+<body>
+    <div class="divHeader">
+        <h1>Dogs, Fries and Shakes</h1>
+    </div>
+    <div class="divBody">
+        <div class="divDrinks">
+            
+            <label for="drinksSel">Shake:</label>
+            <select name="drinks" id="drinksSel">
+                <option value="1">Vanilla</option>
+                <option value="2">Chocolate</option>
+                <option value="3">Swirl</option>
+                <option value="4">Strawberry</option>
+                <option value="5">Banana</option>
+            </select>
+            <label for="drinksAmt">How many:</label>
+                <input type="text" id="drinksAmt" /> 
+            <button id="addDrinks" onclick="addDrinks()">Add to Order</button><br/>
+        </div>
+        <div class="divDogs">
+
+            <label for="dogsSel">Dogs:</label>
+            <select name="dogs" id="dogsSel">
+                <option value="1">Plain</option>
+                <option value="2">Ketchup</option>
+                <option value="3">Ketchup Mustard</option>
+                <option value="4">Chicago Style</option>
+                <option value="5">Cheese</option>
+            </select>
+            <label for="dogsAmt">How many:</label>
+                <input type="text" id="dogsAmt" /> 
+                <button id="addDogs" onclick="addDogs()">Add to Order</button><br/>
+        </div>
+        <div class="divFries">
+
+            <label for="friesSel">Fries:</label>
+            <select name="fries" id="friesSel">
+                <option value="1">kids</option>
+                <option value="2">small</option>
+                <option value="3">medium</option>
+                <option value="4">large</option>
+                <option value="5">extra large</option>
+            </select>
+            <label for="friesAmt">How many:</label>
+                <input type="text" id="friesAmt" /> 
+                <button id="addFries" onclick="addFries()">Add to Order</button><br/>
+        </div>
+        <div class="divTotal">
+            <button id="total" onclick="totalItems()">Total:</button>
+            <h2>Total</h2>
+            <p id="totalCost"></p>
+        </div>
+    </div>
+    <div class="divFooter">
+        <h4>Sean Widdowson</h4>
+    </div>
+</body>
+</html>
