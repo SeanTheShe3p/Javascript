@@ -24,7 +24,7 @@ function start() {
     */
 
     // Demonstrate the use of toString() and print to the to-string paragraph
-    document.getElementById("to-string").innerHTML = toString(5 + 3)
+    document.getElementById("to-string").innerHTML = (6 + 8).toString()
 
     // Demonstrate the use of toExponential() and print to the exponent paragraph
     let exp = 5450000000
