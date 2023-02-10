@@ -14,20 +14,20 @@
 		{
 			"name": "My FTP",
 			"type": "ftp",
-			"host": "swiddowson.mccdgm.net",
+			"host": "swiddowson.mccweb.net",
 			"port": 21,
 			"user": "swiddowson",
-			"password": "AAcash44",
+			"password": "5uM5h33p$",
 			"dir": "/public_html",
 			"transferDataType": "binary"
 		},
 		{
 			"name": "My SFTP",
 			"type": "sftp",
-			"host": "swiddowson.mccdgm.net",
+			"host": "swiddowson.mccweb.net",
 			"port": 22,
 			"user": "swiddowson",
-			"password": "AAcash44",
+			"password": "5uM5h33p$",
 			"dir": "/public_html",
 			"privateKey": null,
 			"passphrase": null
