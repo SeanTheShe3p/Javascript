@@ -32,17 +32,18 @@ function start() {
     const weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
     // join the two arrays into a new array - week
-    const week = weekdays + weekends
+    const fullWeek = weekdays.concat(weekends)
 
     // print the contents of week to the week paragraph
-    document.getElementById("week").innerHTML = week.toString()
+    document.getElementById("week").innerHTML = fullWeek.toString()
 
     // use the pop method to remove the last element of the week array, then print
     // the week array to the pop paragraph
 
 
-    //week.pop();
-    //document.getElementById("pop").innerHTML = week.toString()
+    fullWeek.pop();
+    document.getElementById("pop").innerHTML = fullWeek;
+
     // I believe this is correct code, I cannot get this program to run correctly
 
 
