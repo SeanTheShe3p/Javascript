@@ -14,8 +14,8 @@ var myBirthday = new Date("May 29 1995");
 document.getElementById("birthday").innerHTML = myBirthday;
 // Convert your basic date to the ISO string format and display the result
 // in the iso paragraph
-date.toISOString();
-document.getElementById("iso").innerHTML = date;// this is correct I think I don't know what is wrong.
+stringDate = date.toISOString();
+document.getElementById("iso").innerHTML = stringDate;// this is correct I think I don't know what is wrong.
 
 //  Date Formats: https://www.w3schools.com/js/js_date_formats.asp
 // Demonstrate 3 date formats of your choice to date1, date2, and date3 paragraphs
