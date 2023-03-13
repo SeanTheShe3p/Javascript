@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <title>FastFoodOrder</title>
+</head>
+<body>
+    <header>
+        <h1>OrderSomeFood!</h1>
+    </header>
+    <main>
+        <h2>Select Some Items!</h2>
+        <div>
+
+        <div id="hamburgerBlock">
+            <label for="addItem1">Hamburger:</label></br>
+
+            <label for="hamburgercheese">Cheese?</label>
+            <input id="hamburgercheese" class="addIngredient" type="checkbox">
+            <label for="hamburgerKetchup">Ketchup?</label>
+            <input id="hamburgerKetchup" class="addIngredient" type="checkbox">
+            <label for="hamburgerMustard">Mustard?</label>
+            <input id="hamburgerMustard" class="addIngredient" type="checkbox">
+            <label for="hamburgerDeluxe">Deluxe?</label>
+            <input id="hamburgerDeluxe" class="addIngredient" type="checkbox"></br>
+
+            <input id="addItem1" class="w3-btn-blue" type="button" onclick="addItem.js" value="Add to Order">
+            <input id="subItem1" class="w3-btn-blue" type="button" onclick="subItem.js" value="Subtract from Order">
+        
+        </div>
+        <div id="hotdogBlock">
+            <label for="addItem1">Hot Dog:</label></br>
+
+            <label for="hotDogKetchup">Ketchup?</label>
+            <input id="hotDogKetchup" class="addIngredient" type="checkbox">
+            <label for="hotDogMustard">Mustard?</label>
+            <input id="hotDogMustard" class="addIngredient" type="checkbox">
+            <label for="hotDogRelish">Relish?</label>
+            <input id="hotDogRelish" class="addIngredient" type="checkbox"></br>
+
+            <input id="addItem1" class="w3-btn-blue" type="button" onclick="addItem.js" value="Add to Order">
+            <input id="subItem1" class="w3-btn-blue" type="button" onclick="subItem.js" value="Subtract from Order">
+            
+            
+        </div>
+    </br><h4>Sides and Drinks</h4>
+        <div id="friesBlock">
+            <label for="addItem1">Fries:</label></br>
+
+            <label for="smallFries">Small</label>
+            <input id="smallFries" class="addIngredient" type="checkbox">
+            <label for="medFries">Medium</label>
+            <input id="medFries" class="addIngredient" type="checkbox">
+            <label for="largeFries">Large</label>
+            <input id="largeFries" class="addIngredient" type="checkbox">
+            <label for="xlargeFries">X-Large</label>
+            <input id="xlargeFries" class="addIngredient" type="checkbox">
+            </br>
+
+            <input id="addItem1" class="w3-btn-blue" type="button" onclick="addItem.js" value="Add to Order">
+            <input id="subItem1" class="w3-btn-blue" type="button" onclick="subItem.js" value="Subtract from Order">
+            
+            
+        </div>
+        <div id="drinkBlock">
+            <label for="addItem1">Drinks:</label></br>
+
+            <label for="colaDrink">Cola</label>
+            <input id="colaDrink" class="addIngredient" type="checkbox">
+            <label for="dietDrink">Diet</label>
+            <input id="dietDrink" class="addIngredient" type="checkbox">
+            <label for="lemonLimeDrink">lemonLime</label>
+            <input id="lemonLimeDrink" class="addIngredient" type="checkbox">
+            <label for="waterDrink">Water</label>
+            <input id="waterDrink" class="addIngredient" type="checkbox">
+            </br>
+
+            <input id="addItem1" class="w3-btn-blue" type="button" onclick="addItem.js" value="Add to Order">
+            <input id="subItem1" class="w3-btn-blue" type="button" onclick="subItem.js" value="Subtract from Order">
+            
+            
+        </div>
+    </br><h4>Dessert!</h4>
+        <div id="icecreamBlock">
+            <label for="addItem1">Ice Cream:</label></br>
+
+            <label for="chocolateIceCream">Chocolate</label>
+            <input id="chocolateIceCream" class="iceCreamFlavor" type="radio">
+            <label for="vanillaIceCream">Vanilla</label>
+            <input id="vanillaIceCream" class="iceCreamFlavor" type="radio">
+            <label for="swirlIceCream">Swirl</label>
+            <input id="swirlIceCream" class="iceCreamFlavor" type="radio"></br>
+
+            <label for="sprinklesIceCream">Sprinkles?</label>
+            <input id="sprinklesIceCream" class="addIngredient" type="checkbox">
+            <label for="fudgeIceCream">Fudge?</label>
+            <input id="fudgeIceCream" class="addIngredient" type="checkbox">
+            <label for="nutsIceCream">Nuts?</label>
+            <input id="nutsIceCream" class="addIngredient" type="checkbox">
+            </br>
+
+            <input id="addItem1" class="w3-btn-blue" type="button" onclick="addItem.js" value="Add to Order">
+            <input id="subItem1" class="w3-btn-blue" type="button" onclick="subItem.js" value="Subtract from Order">
+            
+            
+        </div></br>
+        <div id="specialBlock">
+            <label for="specialOrder">Special Instructions:</label>
+            <input id="specialOrder" class="" type="text">
+        </div>
+
+        <div>
+            <h3>Order:</h3></br>
+            <p id="displayResults"></p></br>
+
+            <h3>Total:</h3></br>
+            <p id="totalCost"></p>
+        </div>
+
+
+
+    </main>
+    <footer>
+        <h6>Sean Widdowson</h6>
+        <script src="scripts/javascript.js"></script>
+    </footer>
+</body>
+</html>
