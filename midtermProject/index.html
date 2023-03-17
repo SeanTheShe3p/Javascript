@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>FastFoodOrder</title>
 </head>
-<body>
+<body onload="setup()"> 
+
+    <!-- I added this into the program to try and fix the "logic error", I'm not sure how I can do this without loading a function -->
+    
     <header>
         <h1>OrderSomeFood!</h1>
     </header>
@@ -17,10 +20,10 @@
         <div>
 
         <div id="hamburgerBlock">
-            <label for="addItem1">Hamburger:</label></br>
+            <h4>Hamburgers!</h4></br>
 
-            <label for="hamburgercheese">Cheese?</label>
-            <input id="hamburgercheese" class="addIngredient" type="checkbox">
+            <label for="hamburgerCheese">Cheese?</label>
+            <input id="hamburgerCheese" class="addIngredient" type="checkbox">
             <label for="hamburgerKetchup">Ketchup?</label>
             <input id="hamburgerKetchup" class="addIngredient" type="checkbox">
             <label for="hamburgerMustard">Mustard?</label>
@@ -28,72 +31,70 @@
             <label for="hamburgerDeluxe">Deluxe?</label>
             <input id="hamburgerDeluxe" class="addIngredient" type="checkbox"></br>
 
-            <input id="addItem1" class="w3-btn-blue" type="button" onclick="addItem.js" value="Add to Order">
-            <input id="subItem1" class="w3-btn-blue" type="button" onclick="subItem.js" value="Subtract from Order">
+            <button class="w3-btn-blue" id="addHamburgerButton">Add Item</button>
         
         </div>
         <div id="hotdogBlock">
-            <label for="addItem1">Hot Dog:</label></br>
+            <h4>Hot Dogs!</h4></br>
 
             <label for="hotDogKetchup">Ketchup?</label>
             <input id="hotDogKetchup" class="addIngredient" type="checkbox">
             <label for="hotDogMustard">Mustard?</label>
             <input id="hotDogMustard" class="addIngredient" type="checkbox">
             <label for="hotDogRelish">Relish?</label>
-            <input id="hotDogRelish" class="addIngredient" type="checkbox"></br>
+            <input id="hotDogRelish" class="addIngredient" type="checkbox">
+            <label for="hotDogCheese">Cheese?</label>
+            <input id="hotDogCheese" class="addIngredient" type="checkbox"></br>
 
-            <input id="addItem1" class="w3-btn-blue" type="button" onclick="addItem.js" value="Add to Order">
-            <input id="subItem1" class="w3-btn-blue" type="button" onclick="subItem.js" value="Subtract from Order">
+            <button class="w3-btn-blue" id="addHotDogButton">Add Item</button>
             
             
         </div>
-    </br><h4>Sides and Drinks</h4>
+        <!-- <h4>Sides and Drinks</h4> -->
         <div id="friesBlock">
-            <label for="addItem1">Fries:</label></br>
+            <h4>Fries..</h4></br>
 
             <label for="smallFries">Small</label>
-            <input id="smallFries" class="addIngredient" type="checkbox">
+            <input id="smallFries" class="radAddIngredient" name = "fries" value="small" type="radio">
             <label for="medFries">Medium</label>
-            <input id="medFries" class="addIngredient" type="checkbox">
+            <input id="medFries" class="radAddIngredient" name = "fries" value="medium" type="radio">
             <label for="largeFries">Large</label>
-            <input id="largeFries" class="addIngredient" type="checkbox">
+            <input id="largeFries" class="radAddIngredient" name = "fries" value="large" type="radio">
             <label for="xlargeFries">X-Large</label>
-            <input id="xlargeFries" class="addIngredient" type="checkbox">
+            <input id="xlargeFries" class="radAddIngredient" name = "fries" value="xlarge" type="radio">
             </br>
 
-            <input id="addItem1" class="w3-btn-blue" type="button" onclick="addItem.js" value="Add to Order">
-            <input id="subItem1" class="w3-btn-blue" type="button" onclick="subItem.js" value="Subtract from Order">
+            <button class="w3-btn-blue" id="addFriesButton">Add Item</button>
             
             
         </div>
         <div id="drinkBlock">
-            <label for="addItem1">Drinks:</label></br>
+            <h4>Drinks..</h4></br>
 
             <label for="colaDrink">Cola</label>
-            <input id="colaDrink" class="addIngredient" type="checkbox">
+            <input id="colaDrink" class="radAddIngredient" name="drink" value = "cola" type="radio">
             <label for="dietDrink">Diet</label>
-            <input id="dietDrink" class="addIngredient" type="checkbox">
+            <input id="dietDrink" class="radAddIngredient" name="drink" value = "diet" type="radio">
             <label for="lemonLimeDrink">lemonLime</label>
-            <input id="lemonLimeDrink" class="addIngredient" type="checkbox">
+            <input id="lemonLimeDrink" class="radAddIngredient" name="drink" value = "lemonlime" type="radio">
             <label for="waterDrink">Water</label>
-            <input id="waterDrink" class="addIngredient" type="checkbox">
+            <input id="waterDrink" class="radAddIngredient" name="drink" value = "water" type="radio">
             </br>
 
-            <input id="addItem1" class="w3-btn-blue" type="button" onclick="addItem.js" value="Add to Order">
-            <input id="subItem1" class="w3-btn-blue" type="button" onclick="subItem.js" value="Subtract from Order">
+            <button class="w3-btn-blue" id="addDrinkButton">Add Item</button>
             
             
         </div>
-    </br><h4>Dessert!</h4>
+        <!-- <h4>Dessert!</h4> -->
         <div id="icecreamBlock">
-            <label for="addItem1">Ice Cream:</label></br>
+            <h4>Ice Cream</h4></br>
 
             <label for="chocolateIceCream">Chocolate</label>
-            <input id="chocolateIceCream" class="iceCreamFlavor" type="radio">
+            <input id="chocolateIceCream" class="radAddIngredient" name="flavor" value="Chocolate" type="radio">
             <label for="vanillaIceCream">Vanilla</label>
-            <input id="vanillaIceCream" class="iceCreamFlavor" type="radio">
+            <input id="vanillaIceCream" class="radAddIngredient" name="flavor" value="vanilla" type="radio">
             <label for="swirlIceCream">Swirl</label>
-            <input id="swirlIceCream" class="iceCreamFlavor" type="radio"></br>
+            <input id="swirlIceCream" class="radAddIngredient" name="flavor" value="swirl" type="radio"></br>
 
             <label for="sprinklesIceCream">Sprinkles?</label>
             <input id="sprinklesIceCream" class="addIngredient" type="checkbox">
@@ -103,30 +104,31 @@
             <input id="nutsIceCream" class="addIngredient" type="checkbox">
             </br>
 
-            <input id="addItem1" class="w3-btn-blue" type="button" onclick="addItem.js" value="Add to Order">
-            <input id="subItem1" class="w3-btn-blue" type="button" onclick="subItem.js" value="Subtract from Order">
+            <button class="w3-btn-blue" id="addIceCreamButton">Add Item</button>
             
             
-        </div></br>
+        </div>
         <div id="specialBlock">
-            <label for="specialOrder">Special Instructions:</label>
+            <h4>Special Instructions</h4>
+            <label for="specialOrder">:</label>
             <input id="specialOrder" class="" type="text">
+            <button id="addSpecialInstructions" class="w3-btn-blue">Add Instructions</button>
         </div>
 
-        <div>
+        <div id="orderAndTotals">
             <h3>Order:</h3></br>
-            <p id="displayResults"></p></br>
+            <p id="displayResults"></p>
 
             <h3>Total:</h3></br>
             <p id="totalCost"></p>
         </div>
 
 
-
+        <script src="scripts/javascript.js"></script>
     </main>
     <footer>
         <h6>Sean Widdowson</h6>
-        <script src="scripts/javascript.js"></script>
+
     </footer>
 </body>
 </html>

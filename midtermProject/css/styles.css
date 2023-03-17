@@ -7,6 +7,15 @@ main{
 #hamburgerBlock,#hotdogBlock,#friesBlock,#drinkBlock,#icecreamBlock{
     display: block;
     float: left;
-    width: 40%;
+    width: 50%;
     border-style: ridge;
+}
+#specialBlock, #orderAndTotals{
+    display: block;
+    float: left;
+    width: 100%;
+}
+footer{
+    position: fixed;
+    bottom: 0;    
 }
