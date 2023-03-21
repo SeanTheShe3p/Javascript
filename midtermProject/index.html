@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>FastFoodOrder</title>
 </head>
-<body onload="setup()"> 
-
-    <!-- I added this into the program to try and fix the "logic error", I'm not sure how I can do this without loading a function -->
-    
+<body> 
     <header>
         <h1>OrderSomeFood!</h1>
     </header>
@@ -24,10 +21,6 @@
 
             <label for="hamburgerCheese">Cheese?</label>
             <input id="hamburgerCheese" class="addIngredient" type="checkbox">
-            <label for="hamburgerKetchup">Ketchup?</label>
-            <input id="hamburgerKetchup" class="addIngredient" type="checkbox">
-            <label for="hamburgerMustard">Mustard?</label>
-            <input id="hamburgerMustard" class="addIngredient" type="checkbox">
             <label for="hamburgerDeluxe">Deluxe?</label>
             <input id="hamburgerDeluxe" class="addIngredient" type="checkbox"></br>
 
@@ -37,14 +30,12 @@
         <div id="hotdogBlock">
             <h4>Hot Dogs!</h4></br>
 
-            <label for="hotDogKetchup">Ketchup?</label>
-            <input id="hotDogKetchup" class="addIngredient" type="checkbox">
-            <label for="hotDogMustard">Mustard?</label>
-            <input id="hotDogMustard" class="addIngredient" type="checkbox">
-            <label for="hotDogRelish">Relish?</label>
-            <input id="hotDogRelish" class="addIngredient" type="checkbox">
             <label for="hotDogCheese">Cheese?</label>
-            <input id="hotDogCheese" class="addIngredient" type="checkbox"></br>
+            <input id="hotDogCheese" class="addIngredient" type="checkbox">
+            <label for="hotDogChili">Chili?</label>
+            <input id="hotDogChili" class="addIngredient" type="checkbox">
+            <label for="hotDogEverything">Everything?</label>
+            <input id="hotDogEverything" class="addIngredient" type="checkbox"></br>
 
             <button class="w3-btn-blue" id="addHotDogButton">Add Item</button>
             
@@ -55,13 +46,13 @@
             <h4>Fries..</h4></br>
 
             <label for="smallFries">Small</label>
-            <input id="smallFries" class="radAddIngredient" name = "fries" value="small" type="radio">
+            <input id="smallFries" class="radAddIngredient" name = "fries" type="radio">
             <label for="medFries">Medium</label>
-            <input id="medFries" class="radAddIngredient" name = "fries" value="medium" type="radio">
+            <input id="medFries" class="radAddIngredient" name = "fries" type="radio">
             <label for="largeFries">Large</label>
-            <input id="largeFries" class="radAddIngredient" name = "fries" value="large" type="radio">
+            <input id="largeFries" class="radAddIngredient" name = "fries" type="radio">
             <label for="xlargeFries">X-Large</label>
-            <input id="xlargeFries" class="radAddIngredient" name = "fries" value="xlarge" type="radio">
+            <input id="xlargeFries" class="radAddIngredient" name = "fries" type="radio">
             </br>
 
             <button class="w3-btn-blue" id="addFriesButton">Add Item</button>
@@ -72,13 +63,13 @@
             <h4>Drinks..</h4></br>
 
             <label for="colaDrink">Cola</label>
-            <input id="colaDrink" class="radAddIngredient" name="drink" value = "cola" type="radio">
+            <input id="colaDrink" class="radAddIngredient" name="drink" type="radio">
             <label for="dietDrink">Diet</label>
-            <input id="dietDrink" class="radAddIngredient" name="drink" value = "diet" type="radio">
+            <input id="dietDrink" class="radAddIngredient" name="drink" type="radio">
             <label for="lemonLimeDrink">lemonLime</label>
-            <input id="lemonLimeDrink" class="radAddIngredient" name="drink" value = "lemonlime" type="radio">
+            <input id="lemonLimeDrink" class="radAddIngredient" name="drink" type="radio">
             <label for="waterDrink">Water</label>
-            <input id="waterDrink" class="radAddIngredient" name="drink" value = "water" type="radio">
+            <input id="waterDrink" class="radAddIngredient" name="drink" type="radio">
             </br>
 
             <button class="w3-btn-blue" id="addDrinkButton">Add Item</button>
@@ -90,11 +81,11 @@
             <h4>Ice Cream</h4></br>
 
             <label for="chocolateIceCream">Chocolate</label>
-            <input id="chocolateIceCream" class="radAddIngredient" name="flavor" value="Chocolate" type="radio">
+            <input id="chocolateIceCream" class="radAddIngredient" name="flavor" type="radio">
             <label for="vanillaIceCream">Vanilla</label>
-            <input id="vanillaIceCream" class="radAddIngredient" name="flavor" value="vanilla" type="radio">
+            <input id="vanillaIceCream" class="radAddIngredient" name="flavor" type="radio">
             <label for="swirlIceCream">Swirl</label>
-            <input id="swirlIceCream" class="radAddIngredient" name="flavor" value="swirl" type="radio"></br>
+            <input id="swirlIceCream" class="radAddIngredient" name="flavor" type="radio"></br>
 
             <label for="sprinklesIceCream">Sprinkles?</label>
             <input id="sprinklesIceCream" class="addIngredient" type="checkbox">
@@ -108,6 +99,14 @@
             
             
         </div>
+        <div id="condimentsBlock">
+            <h4>Condiments</h4></br>
+
+            <button class="w3-btn-blue" id="addKetchupButton">Add ketchup</button>
+            <button class="w3-btn-blue" id="addMustardButton">Add Mustard</button>
+            <button class="w3-btn-blue" id="addRelishButton">Add Relish</button>
+        </div>
+
         <div id="specialBlock">
             <h4>Special Instructions</h4>
             <label for="specialOrder">:</label>
@@ -121,14 +120,17 @@
 
             <h3>Total:</h3></br>
             <p id="totalCost"></p>
+            
+            <button id="totalButton">totals</button>
+
         </div>
 
 
-        <script src="scripts/javascript.js"></script>
+
     </main>
     <footer>
         <h6>Sean Widdowson</h6>
-
+        <script src="scripts/javascript.js"></script>
     </footer>
 </body>
 </html>

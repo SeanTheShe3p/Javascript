@@ -1,15 +1,25 @@
 header{
     text-align: center;
+    background-color: aliceblue;
+}
+body{
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    max-height: 100%;
+    
 }
 main{
     margin: auto 15%;
 }
-#hamburgerBlock,#hotdogBlock,#friesBlock,#drinkBlock,#icecreamBlock{
+
+#hamburgerBlock,#hotdogBlock,#friesBlock,#drinkBlock,#icecreamBlock,#condimentsBlock{
     display: block;
     float: left;
     width: 50%;
     border-style: ridge;
+    text-align: center;
 }
+
 #specialBlock, #orderAndTotals{
     display: block;
     float: left;
