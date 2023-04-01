@@ -18,7 +18,8 @@
 			"port": 21,
 			"user": "swiddowson",
 			"password": "AAcash44AAcash44",
-			"dir": "/public_html"
+			"dir": "/public_html",
+            "transferDataType": "binary"
 		},
 		{
 			"name": "My SFTP",
