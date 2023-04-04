@@ -15,17 +15,16 @@
 			"name": "My FTP",
 			"type": "ftp",
 			"host": "swiddowson.mccweb.net",
-			"port": 21,
+			"port": 22,
 			"user": "swiddowson",
 			"password": "AAcash44AAcash44",
-			"dir": "/public_html",
-            "transferDataType": "binary"
+			"dir": "/public_html"
 		},
 		{
 			"name": "My SFTP",
 			"type": "sftp",
 			"host": "swiddowson.mccweb.net",
-			"port": 22,
+			"port": 21,
 			"user": "swiddowson",
 			"password": "AAcash44AAcash44",
 			"dir": "/public_html",
