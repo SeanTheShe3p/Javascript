@@ -1,0 +1,18 @@
+body{
+    width: 80%;
+    display: block;
+    background-color: lightcyan;
+    margin:5% auto;
+
+}
+div{
+
+    background-color: lightblue;
+    margin: auto;
+}
+h1{
+    color: white;
+}
+button{
+    margin-left: 48%;
+}
