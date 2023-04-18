@@ -1,0 +1,56 @@
+#primary{
+    width: 80%;
+    margin: auto;
+}
+buttons{
+    margin: auto;
+}
+button{
+    display: block;
+    float: left;
+    margin: 2%;
+}
+input{
+    margin-left: 25px;
+}
+secondTitle{
+    display: block;
+    float: left;
+}
+.primary-headings{
+    color: black;
+    background-color: white;
+}
+.secondary-headings{
+    color: white;
+    background-color: black;
+}
+.light{
+    color: black;
+    background-color: white;
+
+}
+.light button{
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.light input{
+    border-radius: 4px;
+    background-color: white;
+}
+.dark{
+    color: white;
+    background-color: black;
+}
+.dark button{
+    background-color: greenyellow;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+.dark input{
+    border-radius: 4px;
+    background-color: greenyellow;
+}
